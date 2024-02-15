@@ -1,0 +1,24 @@
+<label for="colorbox">Change Text Color:</label>
+    <input type="text" id="colorbox" placeholder="Enter color code here">
+    <button id="colorchange" onclick="changeColor()">Change Color</button>
+    <br />
+    <label for="fontsize">Change Font Size:</label>
+    <input type="range" id="fontsize" min="10" max="100" value="55" oninput="changeFontSize(this.value)">
+    <br />
+    <button class="stylebt" id="underline" onclick="toggleStyle('underline')">Underline</button>
+    <button class="stylebt" id="italic" onclick="toggleStyle('italic')">Italic</button>
+    <button class="stylebt" id="bold" onclick="toggleStyle('bold')">Bold</button>
+    <br />
+    <label for="list">Change Font Family:</label>
+    <select id="list" onchange="changeFontFamily()">
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans-Serif</option>
+        <option value="monospace">Monospace</option>
+        <option value="cursive">Cursive</option>
+        <option value="fantasy">Fantasy</option>
+    </select>
+    <br />
+    <button id="getstyle" onclick="getCSSProperties()">Get CSS Properties</button>
+    <br />
+    <p id="css-props"></p>
+    <div class="text-here" id="text-container">This is some example text</div>

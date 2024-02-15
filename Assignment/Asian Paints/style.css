@@ -1,0 +1,12 @@
+.block {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.blocks-wall {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 5px;
+}

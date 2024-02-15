@@ -1,0 +1,14 @@
+.head{
+    display: flex;
+    justify-content: center;
+    color: crimson;
+}
+.body{
+    display: grid;
+    justify-content: last baseline;
+    padding: 3px;
+    margin: 1px;
+    font-size: 18px;
+    color: slateblue;
+    
+}

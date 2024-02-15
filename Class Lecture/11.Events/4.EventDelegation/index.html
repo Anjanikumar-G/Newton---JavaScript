@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- mostly avoud this if YOU DO NOT HAVE A STRONG CASE FOR THIS USE CASE -->
+    <script src="./scr.js"></script>
+
+    <!-- Our scripts if it contains document.getElementBySomething -->
+    <script defer src="./script.js"></script>
+
+    <!-- it is mostly used by 3rd party Libraries -->
+    <script async src="./google.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    Event Delegation
+
+
+    <!-- <div class="container" id="grandParent">
+        grandParent
+        <div class="container" id="parent">
+            Parent
+            <div class="container" id="child">
+                child
+            </div>
+        </div>
+    </div>
+
+    <h1>Hello world </h1> -->
+
+    <div id="container" class="container" style="width: 200px; height: 200px; border: 1px solid black;">
+        container
+    </div>
+
+    <div class="palletContainer" id="palletContainer">
+
+
+        <div id="green" style="width: 120px; height: 20px; border: 1px solid black; background-color: green;">button
+            green
+        </div>
+
+        <div id="red" style="width: 120px; height: 20px; border: 1px solid black; background-color: red;">button red
+        </div>
+
+        <div id="yellow" style="width: 120px; height: 20px; border: 1px solid black; background-color: yellow;">button
+            yellow
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
