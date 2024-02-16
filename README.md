@@ -244,7 +244,7 @@ Now-a-days with the help of `Node (Node.js)` JavaScript is used for `Back-end (S
 
 <p>
   <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/2.2.1-stackoverflow-developer-survey-2019.png" alt="Stackoverflow Programming, Scripting, and Markup Languages Survey 2019" title="Stackoverflow Programming, Scripting, and Markup Languages Survey 2019" width="1000" border="2" />
+    &nbsp;&nbsp;&nbsp; <img src="Images/2.2.1-stackoverflow-developer-survey-2019.png" alt="Stackoverflow Programming, Scripting, and Markup Languages Survey 2019" title="Stackoverflow Programming, Scripting, and Markup Languages Survey 2019" width="1000" border="2" />
     <figcaption>&nbsp;&nbsp;&nbsp; Image 02.02.01 - Stackoverflow Programming, Scripting, and Markup Languages Survey 2019</figcaption>
   </figure>
 </p>
