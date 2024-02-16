@@ -416,7 +416,7 @@ Use `F12` key on the keyboard to open the `developer tools` then click on the `C
 
 <p>
   <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/2.10-console-log-alert.png" alt="developer tool inspect console" title="developer tool inspect console" border="2" />
+    &nbsp;&nbsp;&nbsp; <img src="Images/2.10-console-log-alert.png" alt="developer tool inspect console" title="developer tool inspect console" border="2" />
     <figcaption>&nbsp;&nbsp;&nbsp; Image 02.10.03 - Developer Tool Inspect Console</figcaption>
   </figure>
 </p>
