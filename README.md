@@ -409,7 +409,7 @@ Use `F12` key on the keyboard to open the `developer tools` then click on the `C
 
 <p>
   <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/developer_tool_inspect_console.png" alt="developer tool inspect console" title="developer tool inspect console" border="2" />
+    &nbsp;&nbsp;&nbsp; <img src="Images/developer_tool_inspect_console.png" alt="developer tool inspect console" title="developer tool inspect console" border="2" />
     <figcaption>&nbsp;&nbsp;&nbsp; Image 02.10.02 - Developer Tool Inspect Console</figcaption>
   </figure>
 </p>
