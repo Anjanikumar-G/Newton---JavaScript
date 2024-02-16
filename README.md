@@ -402,7 +402,7 @@ Use `F12` key on the keyboard to open the `developer tools` then click on the `C
 
 <p>
   <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/browsers_all_2.png" alt="all browsers" title="widely used browsers" width="400" border="2" />
+    &nbsp;&nbsp;&nbsp; <img src="Images/browsers_all_2.png" alt="all browsers" title="widely used browsers" width="400" border="2" />
     <figcaption>&nbsp;&nbsp;&nbsp; Image 02.10.01 - Widely used modern browsers</figcaption>
   </figure>
 </p>
