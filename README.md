@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="examples_javascript_beginners/assets/images/javascript_logo_4.png" alt="JavaScript logo" title="JavaScript for beginners" width="200" />
+  <img src="images/javascript_logo_4.png" alt="JavaScript logo" title="JavaScript for beginners" width="200" />
 </p>
     
 JavaScript for Beginners
