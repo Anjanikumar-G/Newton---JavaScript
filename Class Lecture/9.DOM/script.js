@@ -168,7 +168,7 @@
 // const body = document.body;
 // const body = document.getElementsByTagName("body")[0];
 
-// --------------------- ------- Fragments ---------
+// --------------------- ------- Fragments -----------------
 /*
     Question is are we inserting in a better way ? 
     Answer NO. 
@@ -217,3 +217,72 @@
 //   fakeNodeOfNamesListElement.append(listItemElement);
 // }
 // namesListElement.append(fakeNodeOfNamesListElement);
+
+//  ---------------   ADVANCE EDIT ELEMENTS (innerHtml, textContent, innerText) ----------
+
+const containerElement = document.getElementById("container");
+console.dir(containerElement);
+
+// -------- EDIT
+
+// 1. textContent -> text content is laying down the items without formatting(new line)
+
+// const str = 'asdasdsadsad
+// asdasdsad
+// '
+
+// containerElement.textContent = `something
+// asdas,dhaskd     asdahskdjhaskdj asd
+// dhakjshdkajsd  <strong>India</strong>    askjdaksjdhakjsdh
+// different  s,dfbas,daskd`;
+
+// 2. innerHtml -> is taking the string as HTML
+
+// containerElement.innerHTML = `something
+// asdas,dhaskd  asdahskdjhaskdj asd
+// dhakjshdkajsd  <u><strong>India</strong></u>   askjdaksjdhakjsdh
+// different  s,dfbas,daskd`;
+
+// 3. innerText -> is taking FOrmatting into consideration (new line)
+
+// containerElement.innerText = `something
+// asdas,dhaskd     asdahskdjhaskdj asd
+// dhakjshdkajsd  <strong>India</strong>    askjdaksjdhakjsdh
+// different  s,dfbas,daskd`;
+
+// NOTE: innerHTML is DANGEROUS !!!!!!!!
+// containerElement.innerHTML = `<script>// hacker scripts </script>`;
+
+/*
+
+    Question: Use innerHTML for inserting a new <li> with the student name
+
+    <ul id="names" class="">
+        <li>Mayank</li>
+        <li>yash</li>
+        <li>priyanka</li>
+        <li>Vikash</li>
+    </ul>
+
+
+
+*/
+
+// anaswer
+
+// Way 1
+
+const namesListElement = document.getElementById("names");
+
+// const newListItem = document.createElement("li");
+// newListItem.textContent = "utkarsh";
+
+// namesListElement.append(newListItem);
+
+// Way 2 -> innerHtml
+
+// console.dir(namesListElement);
+
+// console.log(namesListElement.innerHTML, "inner html view");
+
+// namesListElement.innerHTML += `<li>utkarsh100</li>\n`;
