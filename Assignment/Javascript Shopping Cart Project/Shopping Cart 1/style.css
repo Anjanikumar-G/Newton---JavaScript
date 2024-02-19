@@ -1,0 +1,149 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+      background: #f1f1f1;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2em;
+    border-bottom: 1px solid gainsboro;
+    background: white;
+  }
+  header * {
+    cursor: pointer;
+  }
+  
+  .productscontainer {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    padding: 1.2em;
+    background: #f2f2f2;
+  }
+  
+  .sticky{
+      position: fixed;
+      width: 100%;
+      top: 0;
+  }
+  .productscontainer .product {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+  }
+  .product img {
+    border-bottom: 1px solid gainsboro;
+  }
+  .priceandaddtocart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .carticon{
+      display: flex;
+      gap: 16px;
+  }
+  .carticon::after{
+      content: attr(items);
+  }
+  
+  .cartui {
+    width: 45vw;
+    background: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -999px;
+    top: 0;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 100vh;
+  }
+  .cartopened {
+    right: 0;
+  }
+  .cartui .closecart {
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+  }
+  
+  .cartui .pccontainer {
+      height: 75vh;
+      overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nameandprice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.2em 0;
+  }
+  
+  .pnp {
+    display: flex;
+    gap: 15px;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    background: #243358;
+    box-shadow: 3px 2px 5px gainsboro;
+    color: white;
+    transition: transform .3s linear;
+  }
+  button:hover{
+      transform: translateY(-3px);
+  }
+  
+  .overlay {
+    background: rgba(51, 51, 51, 0.282);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: none;
+  }
+  
+  .cartproduct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+  }
+  .pnp .img{
+      width: 9rem;
+      height: 8rem;
+  }
+  .pnp .img img{
+      width: 9rem;
+      height: 8rem;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .cartui {
+      width: 90vw;
+    }
+  }
