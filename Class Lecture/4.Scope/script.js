@@ -111,8 +111,6 @@
 
 // Example - 8 >
 
-// TODO: utkarsh
-
 var x = 1;
 
 function outer() {
@@ -163,3 +161,31 @@ outer();
 // console.log(a);
 
 // TODO: utkarsh do settimeout question here.......
+
+// TODO: // const obj2 = {
+//   a: 10,
+//   getuser() {
+//     console.log(this);
+//     b: 90;
+//     f = () => {
+//       console.log("letin", this);
+//     };
+//     f();
+//   },
+//   letuser: () => {
+//     console.log(this);
+//   },
+// };
+
+// obj2.getuser();
+// setTimeout(obj2.getuser, 1000);
+
+// .obj2.getuset as a callback not obj method
+
+// how this is working not know
+
+// setTimeout(function () {
+//   obj2.getuser;
+// }, 1000);
+
+// here it is called as obj method

@@ -368,3 +368,13 @@
 // arr.join(); // //aero,plane
 // arr.join(""); // //aeroplane
 // arr.join(" "); // //aero plane
+
+// TODO: utkarsh question about reduce...
+
+// let original_array = [1, 2, 3, 4];
+
+// let reversed_array = [];
+
+// reversed_array = original_array.reduce((acc, item) => [item].concat(acc), []);
+
+// console.log(reversed_array);
