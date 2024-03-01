@@ -131,3 +131,81 @@ SportsCaptainFunc.prototype.routine = function () {
 
 const viratFunc = new SportsCaptainFunc("virat", 12, "bat");
 console.log(viratFunc);
+
+//  -- - - - - - - - - - - - - - - - - - -- Encaptulation -------------------
+
+function BankAccount(accountNumber, accountHolderName, balance) {
+  this._accountNumber = accountNumber;
+  this._accountHolderName = accountHolderName;
+  this._balance = balance;
+
+  function showAccountDetails() {
+    console.log(`Account Number: ${_accountNumber}`);
+    console.log(`Account Holder Name: ${_accountHolderName}`);
+    console.log(`Balance: ${_balance}`);
+  }
+
+  this.deposit = function (amount) {
+    _balance += amount;
+    showAccountDetails();
+  };
+
+  this.withdraw = function (amount) {
+    if (_balance >= amount) {
+      _balance -= amount;
+      showAccountDetails();
+    } else {
+      console.log("Insufficient Balance");
+    }
+  };
+
+  return {
+    deposit: deposit,
+    withdraw: withdraw,
+  };
+}
+
+let myBankAccount = BankAccount("123456", "John Doe", 1000); // function call or Instance creation
+myBankAccount.myBankAccount.deposit(500);
+myBankAccount.withdraw(2000);
+// myBankAccount.showAccountDetails();
+
+// ------------------- COMPOSITION via mixins ---------------------------
+
+class god {
+  killToEat() {}
+}
+class Homosapiens {
+  legs;
+
+  killToEat() {}
+}
+
+class Person extends Homosapiens {
+  name;
+
+  walk() {}
+
+  eat() {}
+
+  think() {}
+}
+
+//
+
+const killToEat = () => {};
+
+const walk = () => {
+  return {};
+};
+
+const think = () => {};
+
+const homosapien = {
+  killToEat: killToEat(),
+};
+
+const person = {
+  walk: walk(),
+  think: think(),
+};
