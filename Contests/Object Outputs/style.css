@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#input-name,
+#btn-greet {
+  margin: 10px;
+  padding: 5px;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 20px;
+}
