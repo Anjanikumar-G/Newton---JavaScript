@@ -1,0 +1,26 @@
+/* css code goes here */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h1 {
+  color: #333;
+}
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+#noteList {
+  text-align: left;
+  margin-top: 20px;
+}
