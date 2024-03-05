@@ -9,8 +9,7 @@ function getIssues(pageNumber) {
   return fetch(
     `https://api.github.com/repositories/1296269/issues?page=${pageNumber}&per_page=5`
   )
-    .then((res) => res.json())
-    .then((res) => res);
+    .then((res) => res.json()).then((res) => res);
 }
 
 async function renderIssues(pageNumber) {
