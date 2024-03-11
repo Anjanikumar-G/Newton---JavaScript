@@ -1,0 +1,14 @@
+.movie {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.movie img {
+  margin-right: 10px;
+  width: 100px;
+  height: 150px;
+}
