@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+}
+.container {
+  background: #fff;
+  padding: 20px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, mimax(300px, 1fr));
+}
+.images {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  transition: transform 0.3s ease;
+}
+.images:hover {
+  transform: scale(1.05);
+}
